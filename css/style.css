@@ -121,10 +121,42 @@ header{
   }
 
 
+.cardinfo h3{
+    margin-bottom: 10px;
+}
+.cardinfo p {
+    margin-bottom: 10px;
+}
+
+.cardinfo button {
+    margin-top: 10px;
+}
+
 /* 4그리드 */
 .FourCardBox {
     background-color: aqua;
+    padding: 30px 10%;
+    display: flex;
 }
+
+.FourCardBox .imgcard {
+    border: solid 1px black;
+    display: block;
+    padding: 20px;
+    margin: 10px;
+    width: 180px;
+    text-align: left;
+}
+
+.FourCardBox .imgcard h3 {
+    text-align: left;
+    font-weight: bold;
+}
+
+.FourCardBox .imgcard p {
+    text-align: left;
+}
+
 
 /* 연구 2그리드 */
 .research {
@@ -134,6 +166,19 @@ header{
 /* 3그리드 */
 .ThreeCardBox {
     background-color: coral;
+    padding: 30px 10%;
+    display: flex;
+}
+
+
+.ThreeCardBox .imgcard {
+    display: flex;
+    padding: 10px;
+}
+
+.ThreeCardBox .imgcard p {
+    text-align: center;
+    font-weight: bold;
 }
 
 /* 푸터 */
@@ -150,7 +195,7 @@ header{
 }
 
 .footer a {
-    padding-left: 20px;
+    padding-left: 50px;
 }
 
 .footer .logo {
