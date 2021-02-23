@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li,ul {
+    list-style: none;
+}
+
+
+
+/* 헤더 */
+header{
+    background: url('../img/1_main_image.png') no-repeat;
+    height: 700px;
+    padding: 30px 10%;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #717171;
+  }
+
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+
+  .sidenav {
+      float: right;
+      overflow: hi;
+  }
+  
+  .subnav .subnavbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: red;
+  }
+  
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: red;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+  
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+
+/* 4그리드 */
+.FourCardBox {
+    background-color: aqua;
+}
+
+/* 연구 2그리드 */
+.research {
+    background-color: blueviolet;
+}
+
+/* 3그리드 */
+.ThreeCardBox {
+    background-color: coral;
+}
+
+/* 푸터 */
+.footer {
+    background-color: green;
+    margin-top: auto;
+    text-align: center;
+    display: block;
+    padding: 30px 10%;
+}
+
+.footer .bottom {
+    border-bottom: solid;
+}
+
+.footer a {
+    padding-left: 20px;
+}
+
+.footer .logo {
+    display: flex;
+}
+
+.footer .logologo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+/* 모바일 뷰 */
+
+/* 세로 방향 타블렛부터 가로 방향 타블렛과 데스크탑까지 */
+@media (min-width: 768px) and (max-width: 979px) { }
+ 
+/* 가로 방향 전화기부터 세로 방향 타블렛까지 */
+@media (max-width: 767px) { }
+ 
+/* 가로 방향 전화기 이하 */
+@media (max-width: 480px) { }
