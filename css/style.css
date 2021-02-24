@@ -32,6 +32,16 @@ button {
   height: 3rem;
 }
 
+.cardinfo h3{
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.cardinfo p{
+  color: gray;
+}
+
+
 /* 헤더 */
 header {
   background: url('../img/1_main_image.png') no-repeat;
@@ -41,9 +51,10 @@ header {
 
 .navbar {
   overflow: hidden;
-  padding: 1rem 10%;
+  padding: 0rem 10%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navbar a {
@@ -111,7 +122,7 @@ header {
 
 
 
-.slider .cardinfo {
+.slider .maininfo {
   font-size: 4rem;
   color: #ffffff;
   position: absolute;
@@ -173,10 +184,16 @@ header {
 .FourCardBox {
   background-color: rgb(245, 245, 245);
   padding: 5rem 10%;
-  height: 60rem;
+  height: 50rem;
   display: flex;
-  align-items: flex-start;
+  justify-content: center;
   position: relative;
+}
+
+.FourCardBox .cardinfo{
+  position: absolute;
+  top: 5rem;
+  left: 20rem;
 }
 
 
@@ -187,7 +204,7 @@ header {
 .FourCardBox .imgcard {
   border: solid 1px black;
   padding: 2rem;
-  margin: 1rem;
+  margin: 0rem 1rem;
   width: 20rem;
   height: 20rem;
 }
@@ -211,20 +228,27 @@ header {
 /* 연구 2그리드 */
 .research {
   display: flex;
-  padding: 0rem;
+  padding: 7rem;
   text-align: center;
   position: absolute;
   left: 0px;
-  top: 105rem;
+  top: 92rem;
   z-index: 2;
 }
 
 .bigCard {
   position: relative;
+  overflow:hidden;
 }
+
 
 .bigCard img {
   opacity: 0.9;
+}
+
+.bigCard .reseachBigCard:hover {
+  transition: .9s;
+  transform: scale(1.1);
 }
 
 
@@ -245,7 +269,7 @@ header {
 
 .bigCard .center {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
 }
 
@@ -255,10 +279,16 @@ header {
   padding: 5rem 10%;
   display: flex;
   align-items: flex-end;
+  justify-content: center;
   height: 60rem;
   position: relative;
 }
 
+.ThreeCardBox .cardinfo {
+  position: absolute;
+  top: 25rem;
+  left: 20rem;
+}
 
 .ThreeCardBox .imgcard {
   display: flex;
@@ -304,10 +334,16 @@ header {
 /* 모바일 뷰 */
 
 /* 세로 방향 타블렛부터 가로 방향 타블렛과 데스크탑까지 */
-@media (min-width: 768px) and (max-width: 979px) {}
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
 
 /* 가로 방향 전화기부터 세로 방향 타블렛까지 */
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+
+}
 
 /* 가로 방향 전화기 이하 */
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+  
+}
