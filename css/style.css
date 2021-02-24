@@ -1,142 +1,169 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html { font-size:62.5%; }
+html {
+  font-size: 62.5%;
+}
 
-li,ul {
-    list-style: none;
+li,
+ul {
+  list-style: none;
 }
 
 a {
   text-decoration: none;
+  color: #000000;
 }
 
 p {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
-h{
-    margin-bottom: 1rem;
+h {
+  margin-bottom: 1rem;
 }
 
 button {
-    margin-top: 1rem;
+  margin-top: 1rem;
+  width: 12rem;
+  height: 3rem;
 }
 
-
-
 /* 헤더 */
-header{
-    background: url('../img/1_main_image.png') no-repeat;
-    height: 70rem;
-    padding: 3rem 10%;
+header {
+  background: url('../img/1_main_image.png') no-repeat;
+  height: 70rem;
+  position: relative;
 }
 
 .navbar {
-    overflow: hidden;
-    background-color: #717171;
-  }
+  overflow: hidden;
+  padding: 1rem 10%;
+  display: flex;
+  justify-content: space-between;
+}
 
-  .navbar a {
-    float: left;
-    font-size: 1.6rem;
-    color: white;
-    text-align: center;
-    padding: 1.4rem 1.6rem;
-    text-decoration: none;
-  }
-  
-  .subnav {
-    float: left;
-    overflow: hidden;
-  }
+.navbar a {
+  float: left;
+  font-size: 1.2rem;
+  color: white;
+  padding: 1.4rem 1.6rem;
+}
 
-  .sidenav {
-      float: right;
-      overflow: hidden;
-  }
-  
-  .subnav .subnavbtn {
-    font-size: 1.6rem;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 1.4rem 1.6rem;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  }
-  .navbar a:hover, .subnav:hover .subnavbtn {
-    background-color: red;
-  }
-  
-  .subnav-content {
-    display: none;
-    position: absolute;
-    left: 0;
-    background-color: red;
-    width: 100%;
-    z-index: 1;
-  }
-  
-  .subnav-content a {
-    float: left;
-    color: white;
-    text-decoration: none;
-  }
-  
-  .subnav-content a:hover {
-    background-color: #eee;
-    color: black;
-  }
-  
-  .subnav:hover .subnav-content {
-    display: block;
-  }
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.sidenav {
+  float: right;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 1.4rem 1.6rem;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+  color: #000000;
+  background-color: #ffffff;
+  border-bottom: rgb(241, 77, 104);
+}
 
 
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 1.6rem;
-    margin-top: -2.2rem;
-    color: white;
-    font-weight: bold;
-    font-size: 1.8rem;
-    transition: 0.6s ease;
-    border-radius: 0 0.3rem 0.3rem 0;
-    user-select: none;
-  }
+.subnav-content {
+  display: none;
+  position: absolute;
+  top: 8.5rem;
+  left: 0rem;
+  width: 100%;
+  background-color: rgb(218, 216, 216);
+  box-shadow: 0 4px 2px -2px gray;
+  padding: 0px 10%;
+  z-index: 1;
+  height: 23rem;
+}
+
+.subnav-content a {
+  float: left;
+  color: gray;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+
+
+.slider .cardinfo {
+  font-size: 4rem;
+  color: #ffffff;
+  position: absolute;
+  top: 20rem;
+  left: 20rem;
+}
+
+
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 33rem;
+  width: 0 auto;
+  padding: 1.6rem;
+  margin-top: -2.2rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1.8rem;
+  transition: 0.6s ease;
+  border-radius: 0 0.3rem 0.3rem 0;
+  user-select: none;
+}
 
 
 .next {
-    right: 0;
-    border-radius: 0.3rem 0 0 0.3rem;
-  }
-  
- 
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  .dot {
-    cursor: pointer;
-    height: 1.5rem;
-    width: 1.5rem;
-    margin: 0 0.2rem;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
+  right: 0;
+  border-radius: 0.3rem 0 0 0.3rem;
+}
+
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 0.5rem;
+  width: 0.5rem;
+  margin: 0 0.2rem;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
 
 
 
@@ -144,113 +171,129 @@ header{
 
 /* 4그리드 */
 .FourCardBox {
-    background-color: rgb(209, 209, 209);
-    padding: 5rem 10%;
-    height: 60rem;
-    display: flex;
-    align-items: flex-start;
-    position: relative;
+  background-color: rgb(245, 245, 245);
+  padding: 5rem 10%;
+  height: 60rem;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+
+.FourCardBox .detailBtn:hover {
+  background-image: url('/img/1_바로가기_button.png');
 }
 
 .FourCardBox .imgcard {
-    border: solid 1px black;
-    padding: 2rem;
-    margin: 1rem;
-    width: 18rem;
+  border: solid 1px black;
+  padding: 2rem;
+  margin: 1rem;
+  width: 20rem;
+  height: 20rem;
 }
+
+.FourCardBox .imgcard:hover {
+  color: #eee;
+  background-image: url('/img/2_box\(1\).png');
+}
+
+
 
 .FourCardBox .imgcard h3 {
-    text-align: left;
-    font-weight: bold;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  text-align: left;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-.FourCardBox .imgcard p {
-    text-align: left;
-}
 
 
 /* 연구 2그리드 */
 .research {
-   display: flex;
-   padding: 0px 1%;
-   margin: 0px auto;
-   text-align: center;
-   position: absolute;
-   left: 0px;
-   top: 105rem;
-   z-index: 2;
-  }
-
-.bigCard{
-    position: relative;
+  display: flex;
+  padding: 0rem;
+  text-align: center;
+  position: absolute;
+  left: 0px;
+  top: 105rem;
+  z-index: 2;
 }
 
-.bigCard .leftBtn {
-  position: absolute;
-  bottom: 18.3%;
+.bigCard {
+  position: relative;
+}
+
+.bigCard img {
+  opacity: 0.9;
 }
 
 
 .bigCard .rightBtn {
-    position: absolute;
-    bottom: 18.3%;
-    right: 3%;
+  position: absolute;
+  bottom: 0rem;
+  right: 0rem;
+}
+
+.leftBtn:hover,
+.rightBtn:hover {
+  opacity: 0.6;
 }
 
 .bigCard p {
-    color: #eee;
+  color: #eee;
 }
 
+.bigCard .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
 
 /* 3그리드 */
 .ThreeCardBox {
-    z-index: 1;
-    background-color: coral;
-    padding: 5rem 10%;
-    display: flex;
-    align-items: flex-end;
-    height: 60rem;
-    position: relative;
+  z-index: 1;
+  padding: 5rem 10%;
+  display: flex;
+  align-items: flex-end;
+  height: 60rem;
+  position: relative;
 }
 
 
 .ThreeCardBox .imgcard {
-    display: flex;
-    padding: 1rem;
+  display: flex;
+  padding: 1rem;
 }
 
 .ThreeCardBox .imgcard p {
-    text-align: center;
-    color: #000000;
-    font-weight: bold;
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
 }
 
 /* 푸터 */
 .footer {
-    background-color: green;
-    margin-top: auto;
-    align-items: center;
-    display: block;
-    padding: 2rem 10%;
+  margin-top: auto;
+  align-items: center;
+  display: block;
+  padding: 2rem 10%;
 }
 
 .footer .bottom {
-    border-bottom: solid;
+  border-bottom: solid;
 }
 
 .footer a {
-    padding-left: 5rem;
+  padding-left: 5rem;
 }
 
 .footer .logo {
-    display: flex;
+  display: flex;
 }
 
 .footer .logologo {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 
@@ -261,10 +304,10 @@ header{
 /* 모바일 뷰 */
 
 /* 세로 방향 타블렛부터 가로 방향 타블렛과 데스크탑까지 */
-@media (min-width: 768px) and (max-width: 979px) { }
- 
+@media (min-width: 768px) and (max-width: 979px) {}
+
 /* 가로 방향 전화기부터 세로 방향 타블렛까지 */
-@media (max-width: 767px) { }
- 
+@media (max-width: 767px) {}
+
 /* 가로 방향 전화기 이하 */
-@media (max-width: 480px) { }
+@media (max-width: 480px) {}
