@@ -55,6 +55,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .navbar a {
@@ -63,6 +64,7 @@ header {
   color: white;
   padding: 1.4rem 1.6rem;
 }
+
 
 .subnav {
   float: left;
@@ -74,34 +76,27 @@ header {
   overflow: hidden;
 }
 
-.subnav .subnavbtn {
-  font-size: 1.6rem;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 1.4rem 1.6rem;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
+
+.subnav:hover {
+  font-weight: bold;
+  border-bottom:3px solid palevioletred;
 }
 
 .navbar a:hover,
 .subnav:hover .subnavbtn {
   color: #000000;
-  background-color: #ffffff;
-  border-bottom: rgb(241, 77, 104);
 }
 
 
 .subnav-content {
   display: none;
   position: absolute;
-  top: 8.5rem;
+  top: 8rem;
   left: 0rem;
   width: 100%;
   background-color: rgb(218, 216, 216);
-  box-shadow: 0 4px 2px -2px gray;
-  padding: 0px 10%;
+  box-shadow: 0 0.4rem 0.2rem -0.2rem black;
+  padding: 1rem 10rem;
   z-index: 1;
   height: 23rem;
 }
