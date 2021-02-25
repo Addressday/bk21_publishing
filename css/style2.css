@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --text-color: #ffffff;
+  --accent-color: #e448b5;
+  --accent2-color: #1aa6dd;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -15,7 +21,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: white;
 }
 
 p {
@@ -42,6 +48,12 @@ button {
 }
 
 
+.container {
+  margin: auto;
+  width: 100%;
+  max-width: 2000px;
+}
+
 /* 헤더 */
 header {
   background: url('../img/1_main_image.png') no-repeat;
@@ -50,43 +62,46 @@ header {
 }
 
 .navbar {
-  overflow: hidden;
-  padding: 0rem 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-}
-
-.navbar a {
-  float: left;
-  font-size: 1.2rem;
-  color: white;
-  padding: 1.4rem 1.6rem;
+  padding: 2rem 10%;
 }
 
 
-.subnav {
-  float: left;
-  overflow: hidden;
-}
-
-.sidenav {
-  float: right;
-  overflow: hidden;
+.navbar_menu {
+  display: flex;
+  padding-left: 0;
 }
 
 
-.subnav:hover {
-  font-weight: bold;
-  border-bottom:3px solid palevioletred;
+.navbar_menu li {
+  padding: 1rem 4rem;
 }
 
-.navbar a:hover,
-.subnav:hover .subnavbtn {
+.navbar_menu li:hover {
+  background-color: #ffffff;
   color: #000000;
+  border-radius: .4rem;
 }
 
+.navbar_links {
+  display: flex;
+  padding-left: 0;
+}
+
+.navbar_links li {
+  padding: 1rem 1rem;
+}
+
+.navbar_toogleBtn {
+  display: none;
+  position: absolute;
+  right: 3.2rem;
+  top: 2.4rem;
+  font-size: 4.4rem;
+  color: #ffffff;
+}
 
 .subnav-content {
   display: none;
@@ -115,7 +130,7 @@ header {
   display: block;
 }
 
-
+/* 슬라이더 */
 
 .slider .maininfo {
   font-size: 4rem;
@@ -186,7 +201,7 @@ header {
 }
 
 .FourCardBox .cardinfo{
-  position: absolute;
+  position: flex;
   top: 5rem;
   left: 20rem;
 }
@@ -298,9 +313,8 @@ header {
 
 /* 푸터 */
 .footer {
-  margin-top: auto;
-  align-items: center;
   display: block;
+  align-items: center;
   padding: 2rem 10%;
 }
 
@@ -331,3 +345,93 @@ header {
 
 /* 가로 방향 전화기 이하 */
 /* 320px 768px */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3rem 2.4rem;
+    border-bottom: .1rem solid #ffffff;
+  }
+
+  .navbar_menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar_menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar_links {
+    display: none;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar_toogleBtn {
+    display: block;
+  }
+
+  .navbar_menu.active,
+  .navbar_links.active {
+    display: flex;
+  }
+
+  .prev,.next {
+    display: none;
+  }
+
+  .slider .maininfo {
+    position: absolute;
+    top: 12rem;
+    left: 1rem;
+    padding: 1rem 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  header {
+    height: 40rem;
+  }
+
+  .FourCardBox{
+    height: 50rem;
+  }
+
+  .FourCardBox .cardinfo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .research{
+    flex-direction: column;
+    position: absolute;
+    top: 10rem;
+    left: 10rem;
+  }
+
+  .bigCard .rightBtn {
+    display: none;
+  }
+
+  .bigCard .reseachBigCard {
+    height: 15rem;
+  }
+
+  .bigCard .center img{
+    width: 5rem;
+  }
+
+  .ThreeCardBox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer{
+    flex-direction: column;
+    align-items: center;
+  }
+}

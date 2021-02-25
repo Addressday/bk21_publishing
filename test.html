@@ -1,16 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+    <meta name="robots" content="ALL">
+    <meta property="og:type" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <link rel="stylesheet" type="text/css" href="/css/style2.css">
+    <link rel="stylesheet" href="text/css" href="/css/reset.css">
+
+    <title>페이지명 | 사이트명</title>
+
+
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <script src="js/main.js" defer></script>
 </head>
 
-<body> 
+<body>
+    <div class="container">
+        <!-- header 네비게이션 바를 구성함  항상 붙어있음-->
+        <header>
+            <nav class="navbar">
+                <div class="navbar_logo">
+                    <a href="/"><img src="./img/1_bk21_logo_white.png"></a>
+                </div>
 
-    <div class="box1" style="position:relative; width:300px; height:300px; background:red;">1</div>
-    <div class="box2" style="position:absolute; left:10px; top: 150px; z-index:1;  width:300px; height:300px; background:blue;">1</div>
-    <div class="box3" style="position:relative; width:300px; height:300px; background:green;">1</div>
+                <ul class="navbar_menu">
+                    <li>
+                        <a href="">교육연구단 소개</a>
+                        <div class="subnav-content">
+                            <a href="/about.html">교육연구단 소개</a>
+                            <a href="/about.html">교육연구단 소개</a>
+                            <a href="/about.html">교육연구단 소개</a>
+                            <a href="/about.html">교육연구단 소개</a>
+                            <a href="/about.html">교육연구단 소개</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="">교육연구단 소개</a>
+                        <div class="subnav-content">
+                            <a href="/about.html">교육연구단 소개</a>
+                            <a href="/about.html">교육연구단 소개</a>
+                            <a href="/about.html">교육연구단 소개</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="">교육연구단 소개</a>
+                        <div class="subnav-content">
+                            <a href="/about.html">교육연구단 소개</a>
+                            <a href="/about.html">교육연구단 소개</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="">교육연구단 소개</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar_links">
+                    <li><a href="">로그인</a></li>
+                    <li><a href="">회원가입</a></li>
+                    <li><a href="">사이트맵</a></li>
+                </ul>
+
+                <a href="#" class="navbar_toogleBtn">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </nav>
+    </div>
+    <!-- section1 carusel 슬라이더로 화면전환하는 레이아웃 구성 -->
+    <div class="slider">
+        <div class="maininfo">
+            <h2>차세대 바이오리더 교육연구단</h2>
+            <p>BRAIN KOREA 21</p>
+            <button>바로가기</button>
+        </div>
+
+        <div class="slider prevnext">
+            <a class="prev" onclick="plusSlides(-1)"><img src="/img/1_prev.png"></a>
+            <a class="next" onclick="plusSlides(1)"><img src="/img/1_next.png"></a>
+        </div>
+
+        <!-- <div style="text-align:center; align-items:flex-end">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div> -->
+    </div>
+
+    </div>
+    </header>
+
+    <!-- section2 1개의 그리드와 4개의 그리드로 구성 클릭시 페이지 이동 -->
+    <section>
+        <div class="FourCardBox">
+            <div class="cardinfo">
+                <h3>교육연구단 소개</h3>
+                <p>차세대 바이오리더 교육연구단을 <br>소개합니다.</p>
+                <button class="detailBtn" href="">자세히보기</button>
+            </div>
+
+            <div class="imgcard">
+                <div>
+                    <img src="/img/2_main_icon(1).png" alt="logo">
+                    <a class="changeWhite" href="">
+                        <h3>비전과 전략</h3>
+                    </a>
+                    <p>교육연구단의 비전과 전략을 확인해 보세요.</p>
+                </div>
+            </div>
+            <div class="imgcard">
+                <div>
+                    <img src="/img/2_main_icon(4).png" alt="logo">
+                    <a class="changeWhite" href="">
+                        <h3>비전과 전략</h3>
+                    </a>
+                    <p>교육연구단의 비전과 전략을 확인해 보세요.</p>
+                </div>
+            </div>
+            <div class="imgcard">
+                <div>
+                    <img src="/img/2_main_icon(4).png" alt="logo">
+                    <a class="changeWhite" href="">
+                        <h3>비전과 전략</h3>
+                    </a>
+                    <p>교육연구단의 비전과 전략을 확인해 보세요.</p>
+                </div>
+            </div>
+            <div class="imgcard">
+                <div>
+                    <img src="/img/2_main_icon(4).png" alt="logo">
+                    <a class="changeWhite" href="">
+                        <h3>비전과 전략</h3>
+                    </a>
+                    <p>교육연구단의 비전과 전략을 확인해 보세요.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- section3 2개의 그리드로 슬라이더 구성 버튼클릭시 페이지 이동 -->
+    <section>
+        <div class="research">
+
+            <div class="bigCard">
+                <a href=""><img class="reseachBigCard" src="/img/3_image(1).png" alt="logo"></a>
+                <div class="bigCard center">
+                    <img src="/img/3_icon(1).png" alt="">
+                    <p>연구성과</p>
+                </div>
+                <a class="rightBtn" href=""><img src="/img/3_box_icon.png"></a>
+            </div>
+
+            <div class="bigCard">
+                <a href=""><img class="reseachBigCard" src="/img/3_image(2).png" alt="logo"></a>
+                <div class="bigCard center">
+                    <img src="/img/3_icon(1).png" alt="">
+                    <p>자체 운영규정</p>
+                </div>
+                <a class="rightBtn" href=""><img src="/img/3_box_icon.png"></a>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="ThreeCardBox">
+            <div class="cardinfo">
+                <h3>교육연구단 구성</h3>
+                <p>차세대 바이오리더 교육연구단을<br>구성하는 멤버를 소개합니다.</p>
+                <button>자세히보기</button>
+            </div>
+            <div class="imgcard">
+                <div><a href=""><img src="/img/4_image(1).png" alt="logo"></a><a href="">
+                        <p>참여교수</p>
+                    </a></div>
+            </div>
+            <div class="imgcard">
+                <div><a href=""><img src="/img/4_image(1).png" alt="logo"></a><a href="">
+                        <p>참여교수</p>
+                    </a></div>
+            </div>
+            <div class="imgcard">
+                <div><a href=""><img src="/img/4_image(1).png" alt="logo"></a><a href="">
+                        <p>참여교수</p>
+                    </a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer 화면 아래 5개의 이미지url 구성 4개의 링크 구성 항상 붙어있음 -->
+    <footer>
+        <div class="footer">
+            <div class="footer bottom">
+                <a href=""><img src="/img/5_logo(1).png" alt="logo"></a>
+                <a href=""><img src="/img/5_logo(1).png" alt="logo"></a>
+                <a href=""><img src="/img/5_logo(1).png" alt="logo"></a>
+                <a href=""><img src="/img/5_logo(1).png" alt="logo"></a>
+                <a href=""><img src="/img/5_logo(1).png" alt="logo"></a>
+            </div>
+
+            <div class="footer logo">
+                <a href="/"><img src="/img/6_footer_logo.png" alt="logo"></a>
+                <div class="footer logologo">
+                    <a href="">home</a>
+                    <a href="">home</a>
+                    <a href="">home</a>
+                    <a href="">home</a>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo sapiente architecto
+                        nobis doloribus magnam voluptatum impedit saepe, dolorum incidunt dolorem ut nisi numquam
+                        earum nihil dignissimos, esse sit, maiores voluptatem.</p>
+                </div>
+
+
+            </div>
+
+    </footer>
+
+    </div>
+
 </body>
+
 </html>

@@ -27,3 +27,15 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+
+// toogleBtn
+
+const toggleBtn = document.querySelector('.navbar_toogleBtn');
+const menu = document.querySelector('.navbar_menu');
+const links = document.querySelector('.navbar_links');
+
+toggleBtn.addEventListener('click', () => {
+  menu.classList.toggle('active');
+  links.classList.toggle('active');
+});
